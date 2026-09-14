@@ -4,7 +4,9 @@ meta {
   seq: 13
 }
 
-GET {{baseUrl}}/api/ratio_config
+get {
+  url: {{baseUrl}}/api/ratio_config
+}
 
 headers {
   Authorization: Bearer {{token}}

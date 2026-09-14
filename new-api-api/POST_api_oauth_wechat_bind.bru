@@ -4,7 +4,9 @@ meta {
   seq: 34
 }
 
-POST {{baseUrl}}/api/oauth/wechat/bind
+post {
+  url: {{baseUrl}}/api/oauth/wechat/bind
+}
 
 headers {
   Authorization: Bearer {{token}}

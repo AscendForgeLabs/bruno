@@ -4,7 +4,9 @@ meta {
   seq: 154
 }
 
-GET {{baseUrl}}/api/models/sync_upstream/preview
+get {
+  url: {{baseUrl}}/api/models/sync_upstream/preview
+}
 
 headers {
   Authorization: Bearer {{token}}

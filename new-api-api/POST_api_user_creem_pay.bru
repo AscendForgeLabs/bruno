@@ -4,7 +4,9 @@ meta {
   seq: 71
 }
 
-POST {{baseUrl}}/api/user/creem/pay
+post {
+  url: {{baseUrl}}/api/user/creem/pay
+}
 
 headers {
   Authorization: Bearer {{token}}

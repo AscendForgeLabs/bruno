@@ -4,7 +4,9 @@ meta {
   seq: 100
 }
 
-POST {{baseUrl}}/api/channel/fetch_models
+post {
+  url: {{baseUrl}}/api/channel/fetch_models
+}
 
 headers {
   Authorization: Bearer {{token}}

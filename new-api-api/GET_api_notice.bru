@@ -4,7 +4,9 @@ meta {
   seq: 6
 }
 
-GET {{baseUrl}}/api/notice
+get {
+  url: {{baseUrl}}/api/notice
+}
 
 headers {
   Authorization: Bearer {{token}}

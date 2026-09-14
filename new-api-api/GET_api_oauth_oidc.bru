@@ -4,7 +4,9 @@ meta {
   seq: 30
 }
 
-GET {{baseUrl}}/api/oauth/oidc
+get {
+  url: {{baseUrl}}/api/oauth/oidc
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 37
 }
 
-POST {{baseUrl}}/api/oauth/telegram/bind/start
+post {
+  url: {{baseUrl}}/api/oauth/telegram/bind/start
+}
 
 headers {
   Authorization: Bearer {{token}}

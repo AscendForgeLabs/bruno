@@ -4,7 +4,9 @@ meta {
   seq: 28
 }
 
-GET {{baseUrl}}/api/oauth/github?code={{code}}
+get {
+  url: {{baseUrl}}/api/oauth/github?code={{code}}
+}
 
 headers {
   Authorization: Bearer {{token}}

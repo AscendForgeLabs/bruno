@@ -4,7 +4,9 @@ meta {
   seq: 72
 }
 
-GET {{baseUrl}}/api/user/epay/notify
+get {
+  url: {{baseUrl}}/api/user/epay/notify
+}
 
 headers {
   Authorization: Bearer {{token}}

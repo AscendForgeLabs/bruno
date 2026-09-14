@@ -4,7 +4,9 @@ meta {
   seq: 116
 }
 
-GET {{baseUrl}}/api/redemption/?p={{p}}&page_size={{page_size}}
+get {
+  url: {{baseUrl}}/api/redemption/?p={{p}}&page_size={{page_size}}
+}
 
 headers {
   Authorization: Bearer {{token}}

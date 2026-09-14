@@ -4,7 +4,9 @@ meta {
   seq: 14
 }
 
-GET {{baseUrl}}/api/verification?email={{email}}
+get {
+  url: {{baseUrl}}/api/verification?email={{email}}
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 104
 }
 
-POST {{baseUrl}}/api/channel/tag/enabled
+post {
+  url: {{baseUrl}}/api/channel/tag/enabled
+}
 
 headers {
   Authorization: Bearer {{token}}

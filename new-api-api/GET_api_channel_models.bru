@@ -4,7 +4,9 @@ meta {
   seq: 87
 }
 
-GET {{baseUrl}}/api/channel/models
+get {
+  url: {{baseUrl}}/api/channel/models
+}
 
 headers {
   Authorization: Bearer {{token}}

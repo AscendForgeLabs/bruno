@@ -4,7 +4,9 @@ meta {
   seq: 123
 }
 
-GET {{baseUrl}}/api/log/?p={{p}}&page_size={{page_size}}
+get {
+  url: {{baseUrl}}/api/log/?p={{p}}&page_size={{page_size}}
+}
 
 headers {
   Authorization: Bearer {{token}}

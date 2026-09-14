@@ -4,7 +4,9 @@ meta {
   seq: 124
 }
 
-POST {{baseUrl}}/api/system-task/log-cleanup?target_timestamp={{target_timestamp}}
+post {
+  url: {{baseUrl}}/api/system-task/log-cleanup?target_timestamp={{target_timestamp}}
+}
 
 headers {
   Authorization: Bearer {{token}}

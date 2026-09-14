@@ -4,7 +4,9 @@ meta {
   seq: 141
 }
 
-GET {{baseUrl}}/api/task/self
+get {
+  url: {{baseUrl}}/api/task/self
+}
 
 headers {
   Authorization: Bearer {{token}}

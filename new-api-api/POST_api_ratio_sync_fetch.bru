@@ -4,7 +4,9 @@ meta {
   seq: 161
 }
 
-POST {{baseUrl}}/api/ratio_sync/fetch
+post {
+  url: {{baseUrl}}/api/ratio_sync/fetch
+}
 
 headers {
   Authorization: Bearer {{token}}

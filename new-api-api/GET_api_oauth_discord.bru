@@ -4,7 +4,9 @@ meta {
   seq: 29
 }
 
-GET {{baseUrl}}/api/oauth/discord?code={{code}}
+get {
+  url: {{baseUrl}}/api/oauth/discord?code={{code}}
+}
 
 headers {
   Authorization: Bearer {{token}}

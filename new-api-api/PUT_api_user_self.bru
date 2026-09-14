@@ -4,7 +4,9 @@ meta {
   seq: 41
 }
 
-PUT {{baseUrl}}/api/user/self
+put {
+  url: {{baseUrl}}/api/user/self
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 69
 }
 
-POST {{baseUrl}}/api/user/stripe/pay
+post {
+  url: {{baseUrl}}/api/user/stripe/pay
+}
 
 headers {
   Authorization: Bearer {{token}}

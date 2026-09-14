@@ -4,7 +4,9 @@ meta {
   seq: 23
 }
 
-DELETE {{baseUrl}}/api/user/sessions/{sid}
+delete {
+  url: {{baseUrl}}/api/user/sessions/{sid}
+}
 
 headers {
   Authorization: Bearer {{token}}

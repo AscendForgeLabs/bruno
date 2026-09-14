@@ -4,7 +4,9 @@ meta {
   seq: 18
 }
 
-POST {{baseUrl}}/api/user/login
+post {
+  url: {{baseUrl}}/api/user/login
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 135
 }
 
-POST {{baseUrl}}/api/prefill_group/
+post {
+  url: {{baseUrl}}/api/prefill_group/
+}
 
 headers {
   Authorization: Bearer {{token}}

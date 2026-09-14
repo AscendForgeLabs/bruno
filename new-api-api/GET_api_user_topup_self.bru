@@ -4,7 +4,9 @@ meta {
   seq: 66
 }
 
-GET {{baseUrl}}/api/user/topup/self
+get {
+  url: {{baseUrl}}/api/user/topup/self
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 24
 }
 
-POST {{baseUrl}}/api/user/sessions/revoke-others
+post {
+  url: {{baseUrl}}/api/user/sessions/revoke-others
+}
 
 headers {
   Authorization: Bearer {{token}}

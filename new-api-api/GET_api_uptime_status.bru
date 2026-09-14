@@ -4,7 +4,9 @@ meta {
   seq: 5
 }
 
-GET {{baseUrl}}/api/uptime/status
+get {
+  url: {{baseUrl}}/api/uptime/status
+}
 
 headers {
   Authorization: Bearer {{token}}

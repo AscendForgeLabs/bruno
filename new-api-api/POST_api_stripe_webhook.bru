@@ -4,7 +4,9 @@ meta {
   seq: 73
 }
 
-POST {{baseUrl}}/api/stripe/webhook
+post {
+  url: {{baseUrl}}/api/stripe/webhook
+}
 
 headers {
   Authorization: Bearer {{token}}

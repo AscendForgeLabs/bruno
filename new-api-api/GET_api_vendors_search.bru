@@ -4,7 +4,9 @@ meta {
   seq: 145
 }
 
-GET {{baseUrl}}/api/vendors/search?keyword={{keyword}}
+get {
+  url: {{baseUrl}}/api/vendors/search?keyword={{keyword}}
+}
 
 headers {
   Authorization: Bearer {{token}}

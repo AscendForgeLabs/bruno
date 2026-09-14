@@ -4,7 +4,9 @@ meta {
   seq: 63
 }
 
-DELETE {{baseUrl}}/api/user/{id}/2fa
+delete {
+  url: {{baseUrl}}/api/user/{id}/2fa
+}
 
 headers {
   Authorization: Bearer {{token}}

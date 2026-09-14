@@ -4,7 +4,9 @@ meta {
   seq: 140
 }
 
-GET {{baseUrl}}/api/task/
+get {
+  url: {{baseUrl}}/api/task/
+}
 
 headers {
   Authorization: Bearer {{token}}

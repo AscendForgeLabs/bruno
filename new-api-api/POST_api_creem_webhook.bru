@@ -4,7 +4,9 @@ meta {
   seq: 74
 }
 
-POST {{baseUrl}}/api/creem/webhook
+post {
+  url: {{baseUrl}}/api/creem/webhook
+}
 
 headers {
   Authorization: Bearer {{token}}

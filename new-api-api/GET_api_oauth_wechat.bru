@@ -4,7 +4,9 @@ meta {
   seq: 33
 }
 
-GET {{baseUrl}}/api/oauth/wechat
+get {
+  url: {{baseUrl}}/api/oauth/wechat
+}
 
 headers {
   Authorization: Bearer {{token}}

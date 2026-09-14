@@ -4,7 +4,9 @@ meta {
   seq: 117
 }
 
-POST {{baseUrl}}/api/redemption/
+post {
+  url: {{baseUrl}}/api/redemption/
+}
 
 headers {
   Authorization: Bearer {{token}}

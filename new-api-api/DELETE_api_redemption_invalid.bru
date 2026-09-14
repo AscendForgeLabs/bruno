@@ -4,7 +4,9 @@ meta {
   seq: 122
 }
 
-DELETE {{baseUrl}}/api/redemption/invalid
+delete {
+  url: {{baseUrl}}/api/redemption/invalid
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 32
 }
 
-POST {{baseUrl}}/api/oauth/state
+post {
+  url: {{baseUrl}}/api/oauth/state
+}
 
 headers {
   Authorization: Bearer {{token}}

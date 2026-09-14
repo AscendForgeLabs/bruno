@@ -4,7 +4,9 @@ meta {
   seq: 36
 }
 
-GET {{baseUrl}}/api/oauth/telegram/login
+get {
+  url: {{baseUrl}}/api/oauth/telegram/login
+}
 
 headers {
   Authorization: Bearer {{token}}

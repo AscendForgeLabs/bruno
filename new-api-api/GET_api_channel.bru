@@ -4,7 +4,9 @@ meta {
   seq: 83
 }
 
-GET {{baseUrl}}/api/channel/?p={{p}}&page_size={{page_size}}&id_sort={{id_sort}}&tag_mode={{tag_mode}}&status={{status}}&type={{type}}
+get {
+  url: {{baseUrl}}/api/channel/?p={{p}}&page_size={{page_size}}&id_sort={{id_sort}}&tag_mode={{tag_mode}}&status={{status}}&type={{type}}
+}
 
 headers {
   Authorization: Bearer {{token}}

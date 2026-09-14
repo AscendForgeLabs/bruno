@@ -4,7 +4,9 @@ meta {
   seq: 95
 }
 
-GET {{baseUrl}}/api/channel/update_balance/{id}
+get {
+  url: {{baseUrl}}/api/channel/update_balance/{id}
+}
 
 headers {
   Authorization: Bearer {{token}}

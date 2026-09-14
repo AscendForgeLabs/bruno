@@ -4,7 +4,9 @@ meta {
   seq: 90
 }
 
-DELETE {{baseUrl}}/api/channel/{id}
+delete {
+  url: {{baseUrl}}/api/channel/{id}
+}
 
 headers {
   Authorization: Bearer {{token}}

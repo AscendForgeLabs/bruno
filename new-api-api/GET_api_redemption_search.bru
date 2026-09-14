@@ -4,7 +4,9 @@ meta {
   seq: 119
 }
 
-GET {{baseUrl}}/api/redemption/search?keyword={{keyword}}
+get {
+  url: {{baseUrl}}/api/redemption/search?keyword={{keyword}}
+}
 
 headers {
   Authorization: Bearer {{token}}

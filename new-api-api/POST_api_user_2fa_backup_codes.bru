@@ -4,7 +4,9 @@ meta {
   seq: 79
 }
 
-POST {{baseUrl}}/api/user/2fa/backup_codes
+post {
+  url: {{baseUrl}}/api/user/2fa/backup_codes
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 160
 }
 
-GET {{baseUrl}}/api/ratio_sync/channels
+get {
+  url: {{baseUrl}}/api/ratio_sync/channels
+}
 
 headers {
   Authorization: Bearer {{token}}

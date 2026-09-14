@@ -4,7 +4,9 @@ meta {
   seq: 22
 }
 
-GET {{baseUrl}}/api/user/sessions
+get {
+  url: {{baseUrl}}/api/user/sessions
+}
 
 headers {
   Authorization: Bearer {{token}}

@@ -4,7 +4,9 @@ meta {
   seq: 59
 }
 
-GET {{baseUrl}}/api/user/search?keyword={{keyword}}&group={{group}}
+get {
+  url: {{baseUrl}}/api/user/search?keyword={{keyword}}&group={{group}}
+}
 
 headers {
   Authorization: Bearer {{token}}

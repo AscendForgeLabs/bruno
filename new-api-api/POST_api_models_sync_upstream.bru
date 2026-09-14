@@ -4,7 +4,9 @@ meta {
   seq: 155
 }
 
-POST {{baseUrl}}/api/models/sync_upstream
+post {
+  url: {{baseUrl}}/api/models/sync_upstream
+}
 
 headers {
   Authorization: Bearer {{token}}

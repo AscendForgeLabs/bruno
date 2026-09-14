@@ -4,7 +4,9 @@ meta {
   seq: 137
 }
 
-DELETE {{baseUrl}}/api/prefill_group/{id}
+delete {
+  url: {{baseUrl}}/api/prefill_group/{id}
+}
 
 headers {
   Authorization: Bearer {{token}}

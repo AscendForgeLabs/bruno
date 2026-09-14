@@ -4,7 +4,9 @@ meta {
   seq: 91
 }
 
-POST {{baseUrl}}/api/channel/{id}/key
+post {
+  url: {{baseUrl}}/api/channel/{id}/key
+}
 
 headers {
   Authorization: Bearer {{token}}

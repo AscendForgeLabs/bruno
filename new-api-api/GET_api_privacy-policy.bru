@@ -4,7 +4,9 @@ meta {
   seq: 8
 }
 
-GET {{baseUrl}}/api/privacy-policy
+get {
+  url: {{baseUrl}}/api/privacy-policy
+}
 
 headers {
   Authorization: Bearer {{token}}

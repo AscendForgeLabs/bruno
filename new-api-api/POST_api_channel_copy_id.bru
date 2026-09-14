@@ -4,7 +4,9 @@ meta {
   seq: 106
 }
 
-POST {{baseUrl}}/api/channel/copy/{id}?suffix={{suffix}}&reset_balance={{reset_balance}}
+post {
+  url: {{baseUrl}}/api/channel/copy/{id}?suffix={{suffix}}&reset_balance={{reset_balance}}
+}
 
 headers {
   Authorization: Bearer {{token}}

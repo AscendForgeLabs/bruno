@@ -4,7 +4,9 @@ meta {
   seq: 16
 }
 
-POST {{baseUrl}}/api/user/reset
+post {
+  url: {{baseUrl}}/api/user/reset
+}
 
 headers {
   Authorization: Bearer {{token}}

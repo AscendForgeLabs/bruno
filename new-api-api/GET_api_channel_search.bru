@@ -4,7 +4,9 @@ meta {
   seq: 86
 }
 
-GET {{baseUrl}}/api/channel/search?keyword={{keyword}}&group={{group}}&model={{model}}
+get {
+  url: {{baseUrl}}/api/channel/search?keyword={{keyword}}&group={{group}}&model={{model}}
+}
 
 headers {
   Authorization: Bearer {{token}}

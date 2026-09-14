@@ -4,7 +4,9 @@ meta {
   seq: 52
 }
 
-POST {{baseUrl}}/api/user/aff_transfer
+post {
+  url: {{baseUrl}}/api/user/aff_transfer
+}
 
 headers {
   Authorization: Bearer {{token}}

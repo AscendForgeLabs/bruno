@@ -4,7 +4,9 @@ meta {
   seq: 25
 }
 
-GET {{baseUrl}}/api/user/groups
+get {
+  url: {{baseUrl}}/api/user/groups
+}
 
 headers {
   Authorization: Bearer {{token}}

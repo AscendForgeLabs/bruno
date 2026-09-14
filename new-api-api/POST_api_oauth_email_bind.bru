@@ -4,7 +4,9 @@ meta {
   seq: 35
 }
 
-POST {{baseUrl}}/api/oauth/email/bind
+post {
+  url: {{baseUrl}}/api/oauth/email/bind
+}
 
 headers {
   Authorization: Bearer {{token}}

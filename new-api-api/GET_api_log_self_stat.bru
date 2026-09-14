@@ -4,7 +4,9 @@ meta {
   seq: 126
 }
 
-GET {{baseUrl}}/api/log/self/stat
+get {
+  url: {{baseUrl}}/api/log/self/stat
+}
 
 headers {
   Authorization: Bearer {{token}}
