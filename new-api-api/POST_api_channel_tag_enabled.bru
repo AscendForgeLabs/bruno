@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/channel/tag/enabled
+  type: http
+  seq: 104
+}
+
+POST {{baseUrl}}/api/channel/tag/enabled
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

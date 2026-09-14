@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/channel/test/{id}
+  type: http
+  seq: 93
+}
+
+GET {{baseUrl}}/api/channel/test/{id}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

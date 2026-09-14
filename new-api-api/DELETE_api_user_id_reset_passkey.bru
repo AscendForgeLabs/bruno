@@ -1,0 +1,18 @@
+meta {
+  name: DELETE /api/user/{id}/reset_passkey
+  type: http
+  seq: 62
+}
+
+DELETE {{baseUrl}}/api/user/{id}/reset_passkey
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

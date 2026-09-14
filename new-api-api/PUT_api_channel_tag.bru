@@ -1,0 +1,23 @@
+meta {
+  name: PUT /api/channel/tag
+  type: http
+  seq: 105
+}
+
+PUT {{baseUrl}}/api/channel/tag
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

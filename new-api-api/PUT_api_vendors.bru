@@ -1,0 +1,23 @@
+meta {
+  name: PUT /api/vendors/
+  type: http
+  seq: 144
+}
+
+PUT {{baseUrl}}/api/vendors/
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

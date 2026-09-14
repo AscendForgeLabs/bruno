@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/user/2fa/backup_codes
+  type: http
+  seq: 79
+}
+
+POST {{baseUrl}}/api/user/2fa/backup_codes
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

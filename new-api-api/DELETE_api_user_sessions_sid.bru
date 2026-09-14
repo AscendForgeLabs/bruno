@@ -1,0 +1,18 @@
+meta {
+  name: DELETE /api/user/sessions/{sid}
+  type: http
+  seq: 23
+}
+
+DELETE {{baseUrl}}/api/user/sessions/{sid}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

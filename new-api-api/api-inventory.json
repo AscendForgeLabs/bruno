@@ -1,0 +1,1616 @@
+{
+  "source": "AscendForgeLabs/new-api",
+  "commit": "f142f39405bb7a08339297b0f0df75734139297b0f0df7573413922bc",
+  "operations": [
+    {
+      "name": "GET /api/setup",
+      "method": "GET",
+      "path": "/api/setup",
+      "file": "GET_api_setup.bru",
+      "summary": "获取初始化状态",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "POST /api/setup",
+      "method": "POST",
+      "path": "/api/setup",
+      "file": "POST_api_setup.bru",
+      "summary": "初始化系统",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/status",
+      "method": "GET",
+      "path": "/api/status",
+      "file": "GET_api_status.bru",
+      "summary": "获取系统状态",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/status/test",
+      "method": "GET",
+      "path": "/api/status/test",
+      "file": "GET_api_status_test.bru",
+      "summary": "测试系统状态",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/uptime/status",
+      "method": "GET",
+      "path": "/api/uptime/status",
+      "file": "GET_api_uptime_status.bru",
+      "summary": "获取Uptime Kuma状态",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/notice",
+      "method": "GET",
+      "path": "/api/notice",
+      "file": "GET_api_notice.bru",
+      "summary": "获取公告",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/user-agreement",
+      "method": "GET",
+      "path": "/api/user-agreement",
+      "file": "GET_api_user-agreement.bru",
+      "summary": "获取用户协议",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/privacy-policy",
+      "method": "GET",
+      "path": "/api/privacy-policy",
+      "file": "GET_api_privacy-policy.bru",
+      "summary": "获取隐私政策",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/about",
+      "method": "GET",
+      "path": "/api/about",
+      "file": "GET_api_about.bru",
+      "summary": "获取关于信息",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/home_page_content",
+      "method": "GET",
+      "path": "/api/home_page_content",
+      "file": "GET_api_home_page_content.bru",
+      "summary": "获取首页内容",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/pricing",
+      "method": "GET",
+      "path": "/api/pricing",
+      "file": "GET_api_pricing.bru",
+      "summary": "获取定价信息",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/models",
+      "method": "GET",
+      "path": "/api/models",
+      "file": "GET_api_models.bru",
+      "summary": "获取模型列表",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/ratio_config",
+      "method": "GET",
+      "path": "/api/ratio_config",
+      "file": "GET_api_ratio_config.bru",
+      "summary": "获取倍率配置",
+      "tags": [
+        "系统"
+      ]
+    },
+    {
+      "name": "GET /api/verification",
+      "method": "GET",
+      "path": "/api/verification",
+      "file": "GET_api_verification.bru",
+      "summary": "发送邮箱验证码",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "GET /api/reset_password",
+      "method": "GET",
+      "path": "/api/reset_password",
+      "file": "GET_api_reset_password.bru",
+      "summary": "发送密码重置邮件",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/reset",
+      "method": "POST",
+      "path": "/api/user/reset",
+      "file": "POST_api_user_reset.bru",
+      "summary": "重置密码",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/register",
+      "method": "POST",
+      "path": "/api/user/register",
+      "file": "POST_api_user_register.bru",
+      "summary": "用户注册",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/login",
+      "method": "POST",
+      "path": "/api/user/login",
+      "file": "POST_api_user_login.bru",
+      "summary": "用户登录",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/login/2fa",
+      "method": "POST",
+      "path": "/api/user/login/2fa",
+      "file": "POST_api_user_login_2fa.bru",
+      "summary": "两步验证登录",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/auth/refresh",
+      "method": "POST",
+      "path": "/api/user/auth/refresh",
+      "file": "POST_api_user_auth_refresh.bru",
+      "summary": "刷新面板登录",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/auth/logout",
+      "method": "POST",
+      "path": "/api/user/auth/logout",
+      "file": "POST_api_user_auth_logout.bru",
+      "summary": "撤销当前登录会话",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "GET /api/user/sessions",
+      "method": "GET",
+      "path": "/api/user/sessions",
+      "file": "GET_api_user_sessions.bru",
+      "summary": "查看登录会话",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/sessions/{sid}",
+      "method": "DELETE",
+      "path": "/api/user/sessions/{sid}",
+      "file": "DELETE_api_user_sessions_sid.bru",
+      "summary": "撤销指定登录会话",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/sessions/revoke-others",
+      "method": "POST",
+      "path": "/api/user/sessions/revoke-others",
+      "file": "POST_api_user_sessions_revoke-others.bru",
+      "summary": "撤销其他登录会话",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "GET /api/user/groups",
+      "method": "GET",
+      "path": "/api/user/groups",
+      "file": "GET_api_user_groups.bru",
+      "summary": "获取用户分组列表",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/login/begin",
+      "method": "POST",
+      "path": "/api/user/passkey/login/begin",
+      "file": "POST_api_user_passkey_login_begin.bru",
+      "summary": "开始Passkey登录",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/login/finish",
+      "method": "POST",
+      "path": "/api/user/passkey/login/finish",
+      "file": "POST_api_user_passkey_login_finish.bru",
+      "summary": "完成Passkey登录",
+      "tags": [
+        "用户登陆注册"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/github",
+      "method": "GET",
+      "path": "/api/oauth/github",
+      "file": "GET_api_oauth_github.bru",
+      "summary": "GitHub OAuth登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/discord",
+      "method": "GET",
+      "path": "/api/oauth/discord",
+      "file": "GET_api_oauth_discord.bru",
+      "summary": "Discord OAuth登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/oidc",
+      "method": "GET",
+      "path": "/api/oauth/oidc",
+      "file": "GET_api_oauth_oidc.bru",
+      "summary": "OIDC登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/linuxdo",
+      "method": "GET",
+      "path": "/api/oauth/linuxdo",
+      "file": "GET_api_oauth_linuxdo.bru",
+      "summary": "LinuxDO OAuth登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "POST /api/oauth/state",
+      "method": "POST",
+      "path": "/api/oauth/state",
+      "file": "POST_api_oauth_state.bru",
+      "summary": "生成OAuth State",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/wechat",
+      "method": "GET",
+      "path": "/api/oauth/wechat",
+      "file": "GET_api_oauth_wechat.bru",
+      "summary": "微信OAuth登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "POST /api/oauth/wechat/bind",
+      "method": "POST",
+      "path": "/api/oauth/wechat/bind",
+      "file": "POST_api_oauth_wechat_bind.bru",
+      "summary": "绑定微信",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "POST /api/oauth/email/bind",
+      "method": "POST",
+      "path": "/api/oauth/email/bind",
+      "file": "POST_api_oauth_email_bind.bru",
+      "summary": "绑定邮箱",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/telegram/login",
+      "method": "GET",
+      "path": "/api/oauth/telegram/login",
+      "file": "GET_api_oauth_telegram_login.bru",
+      "summary": "Telegram登录",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "POST /api/oauth/telegram/bind/start",
+      "method": "POST",
+      "path": "/api/oauth/telegram/bind/start",
+      "file": "POST_api_oauth_telegram_bind_start.bru",
+      "summary": "创建 Telegram 绑定流程",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/oauth/telegram/bind/{flow_token}",
+      "method": "GET",
+      "path": "/api/oauth/telegram/bind/{flow_token}",
+      "file": "GET_api_oauth_telegram_bind_flow_token.bru",
+      "summary": "完成 Telegram 绑定",
+      "tags": [
+        "OAuth"
+      ]
+    },
+    {
+      "name": "GET /api/user/self/groups",
+      "method": "GET",
+      "path": "/api/user/self/groups",
+      "file": "GET_api_user_self_groups.bru",
+      "summary": "获取当前用户分组",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/self",
+      "method": "GET",
+      "path": "/api/user/self",
+      "file": "GET_api_user_self.bru",
+      "summary": "获取当前用户信息",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "PUT /api/user/self",
+      "method": "PUT",
+      "path": "/api/user/self",
+      "file": "PUT_api_user_self.bru",
+      "summary": "更新当前用户信息",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/self",
+      "method": "DELETE",
+      "path": "/api/user/self",
+      "file": "DELETE_api_user_self.bru",
+      "summary": "注销当前用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/models",
+      "method": "GET",
+      "path": "/api/user/models",
+      "file": "GET_api_user_models.bru",
+      "summary": "获取用户可用模型",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/token",
+      "method": "GET",
+      "path": "/api/user/token",
+      "file": "GET_api_user_token.bru",
+      "summary": "生成访问令牌",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/passkey",
+      "method": "GET",
+      "path": "/api/user/passkey",
+      "file": "GET_api_user_passkey.bru",
+      "summary": "获取Passkey状态",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/passkey",
+      "method": "DELETE",
+      "path": "/api/user/passkey",
+      "file": "DELETE_api_user_passkey.bru",
+      "summary": "删除Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/register/begin",
+      "method": "POST",
+      "path": "/api/user/passkey/register/begin",
+      "file": "POST_api_user_passkey_register_begin.bru",
+      "summary": "开始注册Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/register/finish",
+      "method": "POST",
+      "path": "/api/user/passkey/register/finish",
+      "file": "POST_api_user_passkey_register_finish.bru",
+      "summary": "完成注册Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/verify/begin",
+      "method": "POST",
+      "path": "/api/user/passkey/verify/begin",
+      "file": "POST_api_user_passkey_verify_begin.bru",
+      "summary": "开始验证Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/passkey/verify/finish",
+      "method": "POST",
+      "path": "/api/user/passkey/verify/finish",
+      "file": "POST_api_user_passkey_verify_finish.bru",
+      "summary": "完成验证Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/aff",
+      "method": "GET",
+      "path": "/api/user/aff",
+      "file": "GET_api_user_aff.bru",
+      "summary": "获取邀请码",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/aff_transfer",
+      "method": "POST",
+      "path": "/api/user/aff_transfer",
+      "file": "POST_api_user_aff_transfer.bru",
+      "summary": "转换邀请额度",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "PUT /api/user/setting",
+      "method": "PUT",
+      "path": "/api/user/setting",
+      "file": "PUT_api_user_setting.bru",
+      "summary": "更新用户设置",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/topup",
+      "method": "GET",
+      "path": "/api/user/topup",
+      "file": "GET_api_user_topup.bru",
+      "summary": "获取所有充值记录",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/",
+      "method": "GET",
+      "path": "/api/user/",
+      "file": "GET_api_user.bru",
+      "summary": "获取所有用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/",
+      "method": "POST",
+      "path": "/api/user/",
+      "file": "POST_api_user.bru",
+      "summary": "创建用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "PUT /api/user/",
+      "method": "PUT",
+      "path": "/api/user/",
+      "file": "PUT_api_user.bru",
+      "summary": "更新用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/topup/complete",
+      "method": "POST",
+      "path": "/api/user/topup/complete",
+      "file": "POST_api_user_topup_complete.bru",
+      "summary": "管理员完成充值",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/search",
+      "method": "GET",
+      "path": "/api/user/search",
+      "file": "GET_api_user_search.bru",
+      "summary": "搜索用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/{id}",
+      "method": "GET",
+      "path": "/api/user/{id}",
+      "file": "GET_api_user_id.bru",
+      "summary": "获取指定用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/{id}",
+      "method": "DELETE",
+      "path": "/api/user/{id}",
+      "file": "DELETE_api_user_id.bru",
+      "summary": "删除用户",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/{id}/reset_passkey",
+      "method": "DELETE",
+      "path": "/api/user/{id}/reset_passkey",
+      "file": "DELETE_api_user_id_reset_passkey.bru",
+      "summary": "管理员重置用户Passkey",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/user/{id}/2fa",
+      "method": "DELETE",
+      "path": "/api/user/{id}/2fa",
+      "file": "DELETE_api_user_id_2fa.bru",
+      "summary": "管理员禁用用户2FA",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "POST /api/user/manage",
+      "method": "POST",
+      "path": "/api/user/manage",
+      "file": "POST_api_user_manage.bru",
+      "summary": "管理用户状态",
+      "tags": [
+        "用户管理"
+      ]
+    },
+    {
+      "name": "GET /api/user/topup/info",
+      "method": "GET",
+      "path": "/api/user/topup/info",
+      "file": "GET_api_user_topup_info.bru",
+      "summary": "获取充值信息",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "GET /api/user/topup/self",
+      "method": "GET",
+      "path": "/api/user/topup/self",
+      "file": "GET_api_user_topup_self.bru",
+      "summary": "获取用户充值记录",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/user/pay",
+      "method": "POST",
+      "path": "/api/user/pay",
+      "file": "POST_api_user_pay.bru",
+      "summary": "发起易支付",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/user/amount",
+      "method": "POST",
+      "path": "/api/user/amount",
+      "file": "POST_api_user_amount.bru",
+      "summary": "获取支付金额",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/user/stripe/pay",
+      "method": "POST",
+      "path": "/api/user/stripe/pay",
+      "file": "POST_api_user_stripe_pay.bru",
+      "summary": "发起Stripe支付",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/user/stripe/amount",
+      "method": "POST",
+      "path": "/api/user/stripe/amount",
+      "file": "POST_api_user_stripe_amount.bru",
+      "summary": "获取Stripe支付金额",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/user/creem/pay",
+      "method": "POST",
+      "path": "/api/user/creem/pay",
+      "file": "POST_api_user_creem_pay.bru",
+      "summary": "发起Creem支付",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "GET /api/user/epay/notify",
+      "method": "GET",
+      "path": "/api/user/epay/notify",
+      "file": "GET_api_user_epay_notify.bru",
+      "summary": "易支付回调",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/stripe/webhook",
+      "method": "POST",
+      "path": "/api/stripe/webhook",
+      "file": "POST_api_stripe_webhook.bru",
+      "summary": "Stripe Webhook",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "POST /api/creem/webhook",
+      "method": "POST",
+      "path": "/api/creem/webhook",
+      "file": "POST_api_creem_webhook.bru",
+      "summary": "Creem Webhook",
+      "tags": [
+        "充值"
+      ]
+    },
+    {
+      "name": "GET /api/user/2fa/status",
+      "method": "GET",
+      "path": "/api/user/2fa/status",
+      "file": "GET_api_user_2fa_status.bru",
+      "summary": "获取2FA状态",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "POST /api/user/2fa/setup",
+      "method": "POST",
+      "path": "/api/user/2fa/setup",
+      "file": "POST_api_user_2fa_setup.bru",
+      "summary": "设置2FA",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "POST /api/user/2fa/enable",
+      "method": "POST",
+      "path": "/api/user/2fa/enable",
+      "file": "POST_api_user_2fa_enable.bru",
+      "summary": "启用2FA",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "POST /api/user/2fa/disable",
+      "method": "POST",
+      "path": "/api/user/2fa/disable",
+      "file": "POST_api_user_2fa_disable.bru",
+      "summary": "禁用2FA",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "POST /api/user/2fa/backup_codes",
+      "method": "POST",
+      "path": "/api/user/2fa/backup_codes",
+      "file": "POST_api_user_2fa_backup_codes.bru",
+      "summary": "重新生成备用码",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "GET /api/user/2fa/stats",
+      "method": "GET",
+      "path": "/api/user/2fa/stats",
+      "file": "GET_api_user_2fa_stats.bru",
+      "summary": "获取2FA统计",
+      "tags": [
+        "两步验证"
+      ]
+    },
+    {
+      "name": "POST /api/verify",
+      "method": "POST",
+      "path": "/api/verify",
+      "file": "POST_api_verify.bru",
+      "summary": "通用安全验证",
+      "tags": [
+        "安全验证"
+      ]
+    },
+    {
+      "name": "GET /api/verify/status",
+      "method": "GET",
+      "path": "/api/verify/status",
+      "file": "GET_api_verify_status.bru",
+      "summary": "获取验证状态",
+      "tags": [
+        "安全验证"
+      ]
+    },
+    {
+      "name": "GET /api/channel/",
+      "method": "GET",
+      "path": "/api/channel/",
+      "file": "GET_api_channel.bru",
+      "summary": "获取所有渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/",
+      "method": "POST",
+      "path": "/api/channel/",
+      "file": "POST_api_channel.bru",
+      "summary": "添加渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "PUT /api/channel/",
+      "method": "PUT",
+      "path": "/api/channel/",
+      "file": "PUT_api_channel.bru",
+      "summary": "更新渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/search",
+      "method": "GET",
+      "path": "/api/channel/search",
+      "file": "GET_api_channel_search.bru",
+      "summary": "搜索渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/models",
+      "method": "GET",
+      "path": "/api/channel/models",
+      "file": "GET_api_channel_models.bru",
+      "summary": "获取渠道模型列表",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/models_enabled",
+      "method": "GET",
+      "path": "/api/channel/models_enabled",
+      "file": "GET_api_channel_models_enabled.bru",
+      "summary": "获取已启用模型列表",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/{id}",
+      "method": "GET",
+      "path": "/api/channel/{id}",
+      "file": "GET_api_channel_id.bru",
+      "summary": "获取指定渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/channel/{id}",
+      "method": "DELETE",
+      "path": "/api/channel/{id}",
+      "file": "DELETE_api_channel_id.bru",
+      "summary": "删除渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/{id}/key",
+      "method": "POST",
+      "path": "/api/channel/{id}/key",
+      "file": "POST_api_channel_id_key.bru",
+      "summary": "获取渠道密钥",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/test",
+      "method": "GET",
+      "path": "/api/channel/test",
+      "file": "GET_api_channel_test.bru",
+      "summary": "测试所有渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/test/{id}",
+      "method": "GET",
+      "path": "/api/channel/test/{id}",
+      "file": "GET_api_channel_test_id.bru",
+      "summary": "测试指定渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/update_balance",
+      "method": "GET",
+      "path": "/api/channel/update_balance",
+      "file": "GET_api_channel_update_balance.bru",
+      "summary": "更新所有渠道余额",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/update_balance/{id}",
+      "method": "GET",
+      "path": "/api/channel/update_balance/{id}",
+      "file": "GET_api_channel_update_balance_id.bru",
+      "summary": "更新指定渠道余额",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/channel/disabled",
+      "method": "DELETE",
+      "path": "/api/channel/disabled",
+      "file": "DELETE_api_channel_disabled.bru",
+      "summary": "删除已禁用渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/batch",
+      "method": "POST",
+      "path": "/api/channel/batch",
+      "file": "POST_api_channel_batch.bru",
+      "summary": "批量删除渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/fix",
+      "method": "POST",
+      "path": "/api/channel/fix",
+      "file": "POST_api_channel_fix.bru",
+      "summary": "修复渠道能力",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/fetch_models/{id}",
+      "method": "GET",
+      "path": "/api/channel/fetch_models/{id}",
+      "file": "GET_api_channel_fetch_models_id.bru",
+      "summary": "获取上游模型列表",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/fetch_models",
+      "method": "POST",
+      "path": "/api/channel/fetch_models",
+      "file": "POST_api_channel_fetch_models.bru",
+      "summary": "获取模型列表",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/batch/tag",
+      "method": "POST",
+      "path": "/api/channel/batch/tag",
+      "file": "POST_api_channel_batch_tag.bru",
+      "summary": "批量设置渠道标签",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/channel/tag/models",
+      "method": "GET",
+      "path": "/api/channel/tag/models",
+      "file": "GET_api_channel_tag_models.bru",
+      "summary": "获取标签模型",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/tag/disabled",
+      "method": "POST",
+      "path": "/api/channel/tag/disabled",
+      "file": "POST_api_channel_tag_disabled.bru",
+      "summary": "禁用标签渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/tag/enabled",
+      "method": "POST",
+      "path": "/api/channel/tag/enabled",
+      "file": "POST_api_channel_tag_enabled.bru",
+      "summary": "启用标签渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "PUT /api/channel/tag",
+      "method": "PUT",
+      "path": "/api/channel/tag",
+      "file": "PUT_api_channel_tag.bru",
+      "summary": "编辑标签渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/copy/{id}",
+      "method": "POST",
+      "path": "/api/channel/copy/{id}",
+      "file": "POST_api_channel_copy_id.bru",
+      "summary": "复制渠道",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "POST /api/channel/multi_key/manage",
+      "method": "POST",
+      "path": "/api/channel/multi_key/manage",
+      "file": "POST_api_channel_multi_key_manage.bru",
+      "summary": "管理多密钥",
+      "tags": [
+        "渠道管理"
+      ]
+    },
+    {
+      "name": "GET /api/token/",
+      "method": "GET",
+      "path": "/api/token/",
+      "file": "GET_api_token.bru",
+      "summary": "获取所有令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "POST /api/token/",
+      "method": "POST",
+      "path": "/api/token/",
+      "file": "POST_api_token.bru",
+      "summary": "创建令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "PUT /api/token/",
+      "method": "PUT",
+      "path": "/api/token/",
+      "file": "PUT_api_token.bru",
+      "summary": "更新令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "GET /api/token/search",
+      "method": "GET",
+      "path": "/api/token/search",
+      "file": "GET_api_token_search.bru",
+      "summary": "搜索令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "GET /api/token/{id}",
+      "method": "GET",
+      "path": "/api/token/{id}",
+      "file": "GET_api_token_id.bru",
+      "summary": "获取指定令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/token/{id}",
+      "method": "DELETE",
+      "path": "/api/token/{id}",
+      "file": "DELETE_api_token_id.bru",
+      "summary": "删除令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "POST /api/token/batch",
+      "method": "POST",
+      "path": "/api/token/batch",
+      "file": "POST_api_token_batch.bru",
+      "summary": "批量删除令牌",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "GET /api/usage/token/",
+      "method": "GET",
+      "path": "/api/usage/token/",
+      "file": "GET_api_usage_token.bru",
+      "summary": "获取令牌使用情况",
+      "tags": [
+        "令牌管理"
+      ]
+    },
+    {
+      "name": "GET /api/redemption/",
+      "method": "GET",
+      "path": "/api/redemption/",
+      "file": "GET_api_redemption.bru",
+      "summary": "获取所有兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "POST /api/redemption/",
+      "method": "POST",
+      "path": "/api/redemption/",
+      "file": "POST_api_redemption.bru",
+      "summary": "创建兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "PUT /api/redemption/",
+      "method": "PUT",
+      "path": "/api/redemption/",
+      "file": "PUT_api_redemption.bru",
+      "summary": "更新兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "GET /api/redemption/search",
+      "method": "GET",
+      "path": "/api/redemption/search",
+      "file": "GET_api_redemption_search.bru",
+      "summary": "搜索兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "GET /api/redemption/{id}",
+      "method": "GET",
+      "path": "/api/redemption/{id}",
+      "file": "GET_api_redemption_id.bru",
+      "summary": "获取指定兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "DELETE /api/redemption/{id}",
+      "method": "DELETE",
+      "path": "/api/redemption/{id}",
+      "file": "DELETE_api_redemption_id.bru",
+      "summary": "删除兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "DELETE /api/redemption/invalid",
+      "method": "DELETE",
+      "path": "/api/redemption/invalid",
+      "file": "DELETE_api_redemption_invalid.bru",
+      "summary": "删除无效兑换码",
+      "tags": [
+        "兑换码"
+      ]
+    },
+    {
+      "name": "GET /api/log/",
+      "method": "GET",
+      "path": "/api/log/",
+      "file": "GET_api_log.bru",
+      "summary": "获取所有日志",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "POST /api/system-task/log-cleanup",
+      "method": "POST",
+      "path": "/api/system-task/log-cleanup",
+      "file": "POST_api_system-task_log-cleanup.bru",
+      "summary": "创建日志清理任务",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/stat",
+      "method": "GET",
+      "path": "/api/log/stat",
+      "file": "GET_api_log_stat.bru",
+      "summary": "获取日志统计",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/self/stat",
+      "method": "GET",
+      "path": "/api/log/self/stat",
+      "file": "GET_api_log_self_stat.bru",
+      "summary": "获取个人日志统计",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/search",
+      "method": "GET",
+      "path": "/api/log/search",
+      "file": "GET_api_log_search.bru",
+      "summary": "搜索日志",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/self",
+      "method": "GET",
+      "path": "/api/log/self",
+      "file": "GET_api_log_self.bru",
+      "summary": "获取个人日志",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/self/search",
+      "method": "GET",
+      "path": "/api/log/self/search",
+      "file": "GET_api_log_self_search.bru",
+      "summary": "搜索个人日志",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/log/token",
+      "method": "GET",
+      "path": "/api/log/token",
+      "file": "GET_api_log_token.bru",
+      "summary": "通过令牌获取日志",
+      "tags": [
+        "日志"
+      ]
+    },
+    {
+      "name": "GET /api/data/",
+      "method": "GET",
+      "path": "/api/data/",
+      "file": "GET_api_data.bru",
+      "summary": "获取所有额度数据",
+      "tags": [
+        "数据统计"
+      ]
+    },
+    {
+      "name": "GET /api/data/self",
+      "method": "GET",
+      "path": "/api/data/self",
+      "file": "GET_api_data_self.bru",
+      "summary": "获取个人额度数据",
+      "tags": [
+        "数据统计"
+      ]
+    },
+    {
+      "name": "GET /api/group/",
+      "method": "GET",
+      "path": "/api/group/",
+      "file": "GET_api_group.bru",
+      "summary": "获取所有分组",
+      "tags": [
+        "分组"
+      ]
+    },
+    {
+      "name": "GET /api/prefill_group/",
+      "method": "GET",
+      "path": "/api/prefill_group/",
+      "file": "GET_api_prefill_group.bru",
+      "summary": "获取预填分组",
+      "tags": [
+        "分组"
+      ]
+    },
+    {
+      "name": "POST /api/prefill_group/",
+      "method": "POST",
+      "path": "/api/prefill_group/",
+      "file": "POST_api_prefill_group.bru",
+      "summary": "创建预填分组",
+      "tags": [
+        "分组"
+      ]
+    },
+    {
+      "name": "PUT /api/prefill_group/",
+      "method": "PUT",
+      "path": "/api/prefill_group/",
+      "file": "PUT_api_prefill_group.bru",
+      "summary": "更新预填分组",
+      "tags": [
+        "分组"
+      ]
+    },
+    {
+      "name": "DELETE /api/prefill_group/{id}",
+      "method": "DELETE",
+      "path": "/api/prefill_group/{id}",
+      "file": "DELETE_api_prefill_group_id.bru",
+      "summary": "删除预填分组",
+      "tags": [
+        "分组"
+      ]
+    },
+    {
+      "name": "GET /api/mj/",
+      "method": "GET",
+      "path": "/api/mj/",
+      "file": "GET_api_mj.bru",
+      "summary": "获取所有Midjourney任务",
+      "tags": [
+        "任务"
+      ]
+    },
+    {
+      "name": "GET /api/mj/self",
+      "method": "GET",
+      "path": "/api/mj/self",
+      "file": "GET_api_mj_self.bru",
+      "summary": "获取个人Midjourney任务",
+      "tags": [
+        "任务"
+      ]
+    },
+    {
+      "name": "GET /api/task/",
+      "method": "GET",
+      "path": "/api/task/",
+      "file": "GET_api_task.bru",
+      "summary": "获取所有任务",
+      "tags": [
+        "任务"
+      ]
+    },
+    {
+      "name": "GET /api/task/self",
+      "method": "GET",
+      "path": "/api/task/self",
+      "file": "GET_api_task_self.bru",
+      "summary": "获取个人任务",
+      "tags": [
+        "任务"
+      ]
+    },
+    {
+      "name": "GET /api/vendors/",
+      "method": "GET",
+      "path": "/api/vendors/",
+      "file": "GET_api_vendors.bru",
+      "summary": "获取所有供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "POST /api/vendors/",
+      "method": "POST",
+      "path": "/api/vendors/",
+      "file": "POST_api_vendors.bru",
+      "summary": "创建供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "PUT /api/vendors/",
+      "method": "PUT",
+      "path": "/api/vendors/",
+      "file": "PUT_api_vendors.bru",
+      "summary": "更新供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "GET /api/vendors/search",
+      "method": "GET",
+      "path": "/api/vendors/search",
+      "file": "GET_api_vendors_search.bru",
+      "summary": "搜索供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "GET /api/vendors/{id}",
+      "method": "GET",
+      "path": "/api/vendors/{id}",
+      "file": "GET_api_vendors_id.bru",
+      "summary": "获取指定供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "DELETE /api/vendors/{id}",
+      "method": "DELETE",
+      "path": "/api/vendors/{id}",
+      "file": "DELETE_api_vendors_id.bru",
+      "summary": "删除供应商",
+      "tags": [
+        "供应商"
+      ]
+    },
+    {
+      "name": "GET /api/models/",
+      "method": "GET",
+      "path": "/api/models/",
+      "file": "GET_api_models_2.bru",
+      "summary": "获取所有模型元数据",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "POST /api/models/",
+      "method": "POST",
+      "path": "/api/models/",
+      "file": "POST_api_models.bru",
+      "summary": "创建模型元数据",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "PUT /api/models/",
+      "method": "PUT",
+      "path": "/api/models/",
+      "file": "PUT_api_models.bru",
+      "summary": "更新模型元数据",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "GET /api/models/search",
+      "method": "GET",
+      "path": "/api/models/search",
+      "file": "GET_api_models_search.bru",
+      "summary": "搜索模型",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "GET /api/models/{id}",
+      "method": "GET",
+      "path": "/api/models/{id}",
+      "file": "GET_api_models_id.bru",
+      "summary": "获取指定模型",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "DELETE /api/models/{id}",
+      "method": "DELETE",
+      "path": "/api/models/{id}",
+      "file": "DELETE_api_models_id.bru",
+      "summary": "删除模型",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "GET /api/models/sync_upstream/preview",
+      "method": "GET",
+      "path": "/api/models/sync_upstream/preview",
+      "file": "GET_api_models_sync_upstream_preview.bru",
+      "summary": "预览上游模型同步",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "POST /api/models/sync_upstream",
+      "method": "POST",
+      "path": "/api/models/sync_upstream",
+      "file": "POST_api_models_sync_upstream.bru",
+      "summary": "同步上游模型",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "GET /api/models/missing",
+      "method": "GET",
+      "path": "/api/models/missing",
+      "file": "GET_api_models_missing.bru",
+      "summary": "获取缺失模型",
+      "tags": [
+        "模型管理"
+      ]
+    },
+    {
+      "name": "GET /api/option/",
+      "method": "GET",
+      "path": "/api/option/",
+      "file": "GET_api_option.bru",
+      "summary": "获取系统选项",
+      "tags": [
+        "系统设置"
+      ]
+    },
+    {
+      "name": "PUT /api/option/",
+      "method": "PUT",
+      "path": "/api/option/",
+      "file": "PUT_api_option.bru",
+      "summary": "更新系统选项",
+      "tags": [
+        "系统设置"
+      ]
+    },
+    {
+      "name": "POST /api/option/rest_model_ratio",
+      "method": "POST",
+      "path": "/api/option/rest_model_ratio",
+      "file": "POST_api_option_rest_model_ratio.bru",
+      "summary": "重置模型倍率",
+      "tags": [
+        "系统设置"
+      ]
+    },
+    {
+      "name": "GET /api/ratio_sync/channels",
+      "method": "GET",
+      "path": "/api/ratio_sync/channels",
+      "file": "GET_api_ratio_sync_channels.bru",
+      "summary": "获取可同步渠道",
+      "tags": [
+        "系统设置"
+      ]
+    },
+    {
+      "name": "POST /api/ratio_sync/fetch",
+      "method": "POST",
+      "path": "/api/ratio_sync/fetch",
+      "file": "POST_api_ratio_sync_fetch.bru",
+      "summary": "获取上游倍率",
+      "tags": [
+        "系统设置"
+      ]
+    }
+  ]
+}

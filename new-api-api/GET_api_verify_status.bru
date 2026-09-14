@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/verify/status
+  type: http
+  seq: 82
+}
+
+GET {{baseUrl}}/api/verify/status
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

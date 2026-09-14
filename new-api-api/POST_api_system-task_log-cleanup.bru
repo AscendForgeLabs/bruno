@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/system-task/log-cleanup
+  type: http
+  seq: 124
+}
+
+POST {{baseUrl}}/api/system-task/log-cleanup?target_timestamp={{target_timestamp}}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

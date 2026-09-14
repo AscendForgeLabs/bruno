@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/group/
+  type: http
+  seq: 133
+}
+
+GET {{baseUrl}}/api/group/
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

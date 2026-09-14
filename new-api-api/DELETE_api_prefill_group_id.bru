@@ -1,0 +1,18 @@
+meta {
+  name: DELETE /api/prefill_group/{id}
+  type: http
+  seq: 137
+}
+
+DELETE {{baseUrl}}/api/prefill_group/{id}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

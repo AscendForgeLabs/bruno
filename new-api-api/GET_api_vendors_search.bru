@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/vendors/search
+  type: http
+  seq: 145
+}
+
+GET {{baseUrl}}/api/vendors/search?keyword={{keyword}}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

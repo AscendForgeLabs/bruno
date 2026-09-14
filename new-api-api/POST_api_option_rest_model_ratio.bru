@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/option/rest_model_ratio
+  type: http
+  seq: 159
+}
+
+POST {{baseUrl}}/api/option/rest_model_ratio
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

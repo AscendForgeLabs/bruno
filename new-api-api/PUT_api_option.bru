@@ -1,0 +1,23 @@
+meta {
+  name: PUT /api/option/
+  type: http
+  seq: 158
+}
+
+PUT {{baseUrl}}/api/option/
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

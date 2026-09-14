@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/user/auth/logout
+  type: http
+  seq: 21
+}
+
+POST {{baseUrl}}/api/user/auth/logout
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

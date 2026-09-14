@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/user-agreement
+  type: http
+  seq: 7
+}
+
+GET {{baseUrl}}/api/user-agreement
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

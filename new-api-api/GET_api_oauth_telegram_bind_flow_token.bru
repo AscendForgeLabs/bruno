@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/oauth/telegram/bind/{flow_token}
+  type: http
+  seq: 38
+}
+
+GET {{baseUrl}}/api/oauth/telegram/bind/{flow_token}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

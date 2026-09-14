@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/home_page_content
+  type: http
+  seq: 10
+}
+
+GET {{baseUrl}}/api/home_page_content
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

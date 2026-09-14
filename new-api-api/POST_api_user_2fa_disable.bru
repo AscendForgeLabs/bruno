@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/user/2fa/disable
+  type: http
+  seq: 78
+}
+
+POST {{baseUrl}}/api/user/2fa/disable
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

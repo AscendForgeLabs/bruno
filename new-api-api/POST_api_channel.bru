@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/channel/
+  type: http
+  seq: 84
+}
+
+POST {{baseUrl}}/api/channel/
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

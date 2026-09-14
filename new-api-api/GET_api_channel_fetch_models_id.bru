@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/channel/fetch_models/{id}
+  type: http
+  seq: 99
+}
+
+GET {{baseUrl}}/api/channel/fetch_models/{id}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

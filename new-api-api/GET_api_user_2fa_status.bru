@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/user/2fa/status
+  type: http
+  seq: 75
+}
+
+GET {{baseUrl}}/api/user/2fa/status
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

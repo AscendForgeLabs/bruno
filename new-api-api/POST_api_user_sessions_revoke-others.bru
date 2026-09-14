@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/user/sessions/revoke-others
+  type: http
+  seq: 24
+}
+
+POST {{baseUrl}}/api/user/sessions/revoke-others
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

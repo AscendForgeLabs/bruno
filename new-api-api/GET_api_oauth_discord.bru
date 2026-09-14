@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/oauth/discord
+  type: http
+  seq: 29
+}
+
+GET {{baseUrl}}/api/oauth/discord?code={{code}}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

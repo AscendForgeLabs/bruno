@@ -1,0 +1,18 @@
+meta {
+  name: GET /api/vendors/{id}
+  type: http
+  seq: 146
+}
+
+GET {{baseUrl}}/api/vendors/{id}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

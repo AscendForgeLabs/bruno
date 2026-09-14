@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/channel/batch/tag
+  type: http
+  seq: 101
+}
+
+POST {{baseUrl}}/api/channel/batch/tag
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}

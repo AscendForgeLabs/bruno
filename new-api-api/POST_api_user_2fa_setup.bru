@@ -1,0 +1,23 @@
+meta {
+  name: POST /api/user/2fa/setup
+  type: http
+  seq: 76
+}
+
+POST {{baseUrl}}/api/user/2fa/setup
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json
+{
+  
+}
+
+tests {
+  test("status is not server error", function() {
+    expect(res.status).to.be.lessThan(500);
+  });
+}
